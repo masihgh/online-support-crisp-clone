@@ -4,7 +4,7 @@ const cors = require('cors')
 const PORT = process.env.PORT || 5000
 app.use(cors())
 app.get('/', (req, res) => {
-  req.send('Server is up and running')
+    res.send('Server is up and running');
 })
 http.listen(PORT, () => {
   console.log(`Listening to ${PORT}`);
